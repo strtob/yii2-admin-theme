@@ -177,3 +177,78 @@
     color: var(--vz-primary) !important;
 }
 
+/*
+ * Fix für Sidebar Toggle - Menü verschwindet vollständig
+ */
+@media (max-width: 767.98px) {
+    .app-menu {
+        position: fixed;
+        left: 0;
+        transition: transform 0.3s ease-out;
+    }
+    
+    body:not(.vertical-sidebar-enable) .app-menu {
+        transform: translateX(-100%);
+    }
+    
+    body.vertical-sidebar-enable .app-menu {
+        transform: translateX(0);
+    }
+}
+
+/*
+ * Fix für vertical-overlay - soll gesamten Bildschirm abdecken
+ */
+.vertical-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1001;
+    display: none;
+}
+
+body.vertical-sidebar-enable .vertical-overlay {
+    display: block;
+}
+
+/*
+ * Fix für main-content - kein Abstand um das Menüpanel
+ */
+.main-content {
+    padding: 0;
+    min-height: 100vh;
+}
+
+/*
+ * Fix für page-content - richtige Abstände
+ */
+.page-content {
+    padding-left: calc(1.5rem * 0.5);
+    padding-right: calc(1.5rem * 0.5);
+}
+
+/*
+ * Fix für app-menu - kein Abstand oben und rechts
+ */
+.app-menu {
+    margin: 0;
+    padding: 0 0 calc(70px + 25px) 0;
+}
+
+.navbar-menu {
+    margin: 0;
+    padding: 0 0 calc(70px + 25px) 0;
+}
+
+/*
+ * Fix für layout-wrapper
+ */
+#layout-wrapper {
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
