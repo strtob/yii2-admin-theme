@@ -266,10 +266,12 @@ body.vertical-sidebar-enable .vertical-overlay {
  * Design-Anpassungen: Schönes Grau-Schema für Sidebar/Navigation
  */
 
-/* Sidebar Hintergrund - elegantes Dunkelgrau */
+/* Sidebar Hintergrund - elegantes Grau mit Transparenz */
 .app-menu,
 .navbar-menu {
-    background: linear-gradient(180deg, #2c3e50 0%, #34495e 100%) !important;
+    background: rgba(248, 249, 250, 0.98) !important;
+    background: linear-gradient(180deg, rgba(248, 249, 250, 0.98) 0%, rgba(233, 236, 239, 0.98) 100%) !important;
+    border-right: 1px solid #dee2e6 !important;
 }
 
 /* Topbar/Header - passendes Grau */
@@ -288,32 +290,32 @@ body.vertical-sidebar-enable .vertical-overlay {
     background-color: transparent !important;
 }
 
-/* Menü-Links - weiße Schrift auf grauem Hintergrund */
+/* Menü-Links - dunkle Schrift auf hellem Hintergrund */
 .navbar-menu .navbar-nav .nav-link {
-    color: #ecf0f1 !important;
+    color: #495057 !important;
 }
 
 /* Aktive Menü-Links - helleres Grau mit Akzent */
 .navbar-menu .navbar-nav .nav-link.active {
-    background-color: rgba(52, 152, 219, 0.2) !important;
-    color: #3498db !important;
-    border-left: 3px solid #3498db;
+    background-color: rgba(52, 152, 219, 0.15) !important;
+    color: #0d6efd !important;
+    border-left: 3px solid #0d6efd;
 }
 
 /* Hover-Effekt - sanftes Grau */
 .navbar-menu .navbar-nav .nav-link:hover {
-    background-color: rgba(236, 240, 241, 0.1) !important;
-    color: #ffffff !important;
+    background-color: rgba(108, 117, 125, 0.1) !important;
+    color: #212529 !important;
 }
 
 /* Sub-Menü Items */
 .navbar-menu .navbar-nav .nav-sm .nav-link {
-    color: #bdc3c7 !important;
+    color: #6c757d !important;
 }
 
 .navbar-menu .navbar-nav .nav-sm .nav-link.active {
-    color: #3498db !important;
-    background-color: rgba(52, 152, 219, 0.15) !important;
+    color: #0d6efd !important;
+    background-color: rgba(13, 110, 253, 0.1) !important;
 }
 
 /* Main Content Hintergrund - sehr helles Grau */
@@ -334,11 +336,11 @@ body.vertical-sidebar-enable .vertical-overlay {
 
 /* Menu Icons */
 .navbar-menu .navbar-nav .nav-link i {
-    color: #95a5a6 !important;
+    color: #6c757d !important;
 }
 
 .navbar-menu .navbar-nav .nav-link.active i,
 .navbar-menu .navbar-nav .nav-link:hover i {
-    color: #3498db !important;
+    color: #0d6efd !important;
 }
 
