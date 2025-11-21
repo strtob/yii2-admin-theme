@@ -43,7 +43,7 @@ $logoLightLg = $settings['logo_light_lg']->value ?? '' ;
                 </button>
 
                 <!-- App Search-->
-                <?=  SearchWidget::widget();?>
+                <?=  \sahmed237\yii2admintheme\widgets\SearchWidget::widget();?>
             </div>
 
             <div class="d-flex align-items-center">
@@ -59,7 +59,7 @@ $logoLightLg = $settings['logo_light_lg']->value ?? '' ;
                                     <input type="text" class="form-control" placeholder="Search ..." aria-label="Recipient's username">
                                     <button class="btn btn-primary" type="submit"><i class="mdi mdi-magnify"></i></button>
                                 </div>
-                            </div>
+                            </div>sahmed237\yii2admintheme\widgets
                         </form>
                     </div>
                 </div>
