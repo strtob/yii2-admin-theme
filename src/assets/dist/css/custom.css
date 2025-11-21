@@ -218,7 +218,7 @@ body.vertical-sidebar-enable .vertical-overlay {
  * Fix für main-content - kein Abstand um das Menüpanel
  */
 .main-content {
-    padding: 0;
+    padding: 0 !important;
     min-height: 100vh;
 }
 
@@ -231,16 +231,26 @@ body.vertical-sidebar-enable .vertical-overlay {
 }
 
 /*
- * Fix für app-menu - kein Abstand oben und rechts
+ * Fix für app-menu/navbar-menu - KEIN Margin (überschreibt semibox margin)
+ * Dies ist wichtig, um den 25px Abstand bei semibox Layout zu entfernen
  */
-.app-menu {
-    margin: 0;
-    padding: 0 0 calc(70px + 25px) 0;
+.app-menu,
+.navbar-menu {
+    margin: 0 !important;
+    padding: 0 0 calc(70px + 25px) 0 !important;
 }
 
-.navbar-menu {
-    margin: 0;
-    padding: 0 0 calc(70px + 25px) 0;
+/* Überschreibe speziell die semibox margin für alle Bildschirmgrößen */
+[data-layout=semibox] .navbar-menu {
+    margin: 0 !important;
+    border-radius: 0 !important;
+}
+
+@media (min-width: 1440px) {
+    [data-layout=semibox] .navbar-menu {
+        margin: 0 !important;
+        border-radius: 0 !important;
+    }
 }
 
 /*
