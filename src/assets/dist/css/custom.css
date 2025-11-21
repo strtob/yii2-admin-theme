@@ -262,3 +262,83 @@ body.vertical-sidebar-enable .vertical-overlay {
     padding: 0;
 }
 
+/*
+ * Design-Anpassungen: Schönes Grau-Schema für Sidebar/Navigation
+ */
+
+/* Sidebar Hintergrund - elegantes Dunkelgrau */
+.app-menu,
+.navbar-menu {
+    background: linear-gradient(180deg, #2c3e50 0%, #34495e 100%) !important;
+}
+
+/* Topbar/Header - passendes Grau */
+#page-topbar {
+    background-color: #ecf0f1 !important;
+    border-bottom: 1px solid #bdc3c7 !important;
+}
+
+/* Navbar Header Items */
+#page-topbar .navbar-header {
+    background-color: transparent !important;
+}
+
+/* Logo Box Hintergrund transparent */
+.navbar-brand-box {
+    background-color: transparent !important;
+}
+
+/* Menü-Links - weiße Schrift auf grauem Hintergrund */
+.navbar-menu .navbar-nav .nav-link {
+    color: #ecf0f1 !important;
+}
+
+/* Aktive Menü-Links - helleres Grau mit Akzent */
+.navbar-menu .navbar-nav .nav-link.active {
+    background-color: rgba(52, 152, 219, 0.2) !important;
+    color: #3498db !important;
+    border-left: 3px solid #3498db;
+}
+
+/* Hover-Effekt - sanftes Grau */
+.navbar-menu .navbar-nav .nav-link:hover {
+    background-color: rgba(236, 240, 241, 0.1) !important;
+    color: #ffffff !important;
+}
+
+/* Sub-Menü Items */
+.navbar-menu .navbar-nav .nav-sm .nav-link {
+    color: #bdc3c7 !important;
+}
+
+.navbar-menu .navbar-nav .nav-sm .nav-link.active {
+    color: #3498db !important;
+    background-color: rgba(52, 152, 219, 0.15) !important;
+}
+
+/* Main Content Hintergrund - sehr helles Grau */
+.main-content {
+    background-color: #f8f9fa !important;
+}
+
+/* Page Content Bereich */
+.page-content {
+    background-color: transparent !important;
+}
+
+/* Cards - weiß auf hellem Grau */
+.card {
+    background-color: #ffffff !important;
+    border: 1px solid #e9ecef !important;
+}
+
+/* Menu Icons */
+.navbar-menu .navbar-nav .nav-link i {
+    color: #95a5a6 !important;
+}
+
+.navbar-menu .navbar-nav .nav-link.active i,
+.navbar-menu .navbar-nav .nav-link:hover i {
+    color: #3498db !important;
+}
+
